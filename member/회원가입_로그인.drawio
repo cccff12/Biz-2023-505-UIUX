@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2023-06-01T00:43:24.716Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="Hp3ziZl5T_keEHzCPd3F" version="21.3.5" type="device">
+  <diagram name="페이지-1" id="7qeExkZI7BOKpzC3gbRw">
+    <mxGraphModel dx="1259" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CDzAdEVbii14rBJLsFbT-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-1" target="CDzAdEVbii14rBJLsFbT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-1" value="유저" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="170" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-5" target="CDzAdEVbii14rBJLsFbT-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-11" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-5" target="CDzAdEVbii14rBJLsFbT-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-5" target="CDzAdEVbii14rBJLsFbT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-5" value="로그인하기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="180" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-7" target="CDzAdEVbii14rBJLsFbT-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-7" value="회원가입하기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="300" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-8" target="CDzAdEVbii14rBJLsFbT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-8" target="CDzAdEVbii14rBJLsFbT-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-8" value="아이디찾기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="330" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-9" value="비밀번호 찾기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="410" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-14" target="CDzAdEVbii14rBJLsFbT-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-14" value="유효성검사하기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="560" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-15" value="&lt;h1&gt;유효성검사&lt;/h1&gt;&lt;p&gt;이메일 중복검사&lt;/p&gt;&lt;p&gt;이메일 형식검사&lt;/p&gt;&lt;p&gt;비밀번호 적합성 검사&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="660" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-17" target="CDzAdEVbii14rBJLsFbT-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-17" value="회원정보 저장하기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="560" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-19" value="회원정보 Table" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="250" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-23" target="CDzAdEVbii14rBJLsFbT-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="CDzAdEVbii14rBJLsFbT-23" target="CDzAdEVbii14rBJLsFbT-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CDzAdEVbii14rBJLsFbT-23" value="회원정보 조회&lt;br&gt;로그인 승인하기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="140" width="150" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
