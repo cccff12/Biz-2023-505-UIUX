@@ -47,8 +47,18 @@ tag color 와 같게 해 주어야 한다
 a {
   color: inherit;
   text-decoration: none;
-  padding: 16px;
+
+  /* a tag는 기본 속성이 inline이다
+보통 inline tag는 margin 과 padding, width, heigit 등의 크기를 조절하는
+속성이 적용이 잘 안된다
+그래서 a tag에 margin , padding 등을 적용할때는 
+성질을 inline - block 으로 변경해 주어야 한다.
+inline- block 성질은 linine 이면서 box tag 의 속성도 
+일부 같이 포함하는 성질을 갖게 된다.
+*/
+
   display: inline-block;
+  padding: 16px;
   border: 1px solid white;
 }
 
