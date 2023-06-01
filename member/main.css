@@ -1,0 +1,88 @@
+/*
+header tag 의 background -color와 color 속성의 변경했더니
+h1 tag, p tag로 구성된 Text 들의 속성이 같이 변경되었다
+ 
+h1 tag와 p tag는 header tag 가 감싸고 있는 형태이다
+이때 header tag를 부모 tag라고 하고, h1과 p를 header tag를 child tag라고 한다
+
+부모 tag 의 속성을 설정하면 child tag의 속성도 같이 변화 된다.(단 일부는 그렇지 않다)
+
+*/
+header {
+  background-color: green;
+  color: white;
+  text-align: center;
+  /*
+  화면에 여백, 글자크기, box의 크기 등을 표현할때 px, pt,%등의 단위를 사용한다
+  이 단위들은 보통 고정값으로 화면의 크기 등을 고려하지 않는 경우가 많다.
+  rem(em)은 주변의 글자 크기에 따라서 비례적으로 단위를 적용한다. 기본값으로 16px대비
+  배율로 표현한다.
+  1rem:16px
+  1.2rem:(16*1.2)px로 보면 된다
+  */
+  padding: 1rem;
+}
+
+/*
+nav tag의 바탕색과 글자색을 변경했다.
+이때 nav tag 가 감싸고 있는 child tag에도 당연히 전파가 될 것으로 생각했다
+그런데, nav tah의 child 인 a tag 는 글자색이 변경되지 않았다.
+
+이처럼 일부 부모의 속성을 상속받지 않는 tag들도 있다.
+*/
+nav {
+  background-color: blue;
+  color: white;
+}
+/*
+a tag는 특성상 부모 속성을 상속받지 않는다 따라서  부모 tag color와 일치시키기 위해 a tag 의 color속성을 부모
+tag color 와 같게 해 주어야 한다 
+그런데, 부모의 color를 변경할 때마다 a tag 의 color도 변경 시켜줘야하는 번거로움이 있다.
+
+이럴때는 color 를 임의의 값으로 하지 않고  inherit 키워드를 사용한다
+
+부모의 (nav)의 color속성을 변경하면 a tag의 color 속성도 같이 변경된다.
+
+*/
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 16px;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+section {
+  border: 1px solid green;
+}
+article {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+footer {
+  /*
+    css에서 색상값을 표현하는 방법
+    1. 색상 문자열을 사용하는 방법
+    2. rgb(): 빛의 3원색을 0~255까지 범위로 각각 지정하여 색을 표현하는 방법
+    3. rgba(): 빛의 3원색과 alpha 값(투명도, opecity)를 각각 지정하여
+    색과 농도를 표현하는 방법
+    4. 16진수 문자열로 표현하는 방법
+    #RGB 색상을 16진수 문자열로 표현한다
+    각각 RGB는 00~FF 까지 값을 갖는다
+    */
+
+  /*색상 문자값으로 표현하기*/
+  color: whitesmoke;
+
+  /*RGBA () 함수로 사용하기*/
+  background-color: rgb(0, 0, 0, 0.3);
+
+  /* 16진수 문자열로 표현하기*/
+  background-color: #5abd19;
+  background-color: #334455;
+  background-color: #555;
+
+  text-align: center;
+  padding: 10px;
+}

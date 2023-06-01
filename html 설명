@@ -2,9 +2,73 @@ html
 
 
 html은 tag로 묶인다
+모든 tag는 오브젝트다
 
 !로 시작
 1. lang 을 "ko"로 변경
-2. title은 홈페이지 이름
-3. h1은 큰글씨 ~6까지 가능
-4. p와 div 는 일반 글씨 
+2. <title></title>은 홈페이지 이름
+3. <h1></h1>은 큰글씨 ~6까지 가능
+4. <p>/<p>와 <div></div> 는 일반 글씨 
+5. </input>은 닫는 테그만 씀- ex)))<input placeholder="이메일" />
+6. <button></button>
+7. <a></a> : 다른 html 파일로 연결시키는 tag이자 hyper text---- href
+
+
+태그
+	태그는 둘로 나누어지는데
+	box태그는 그 줄 전체를
+	inline 태그는 그 줄에서 계속 이어진다. 이걸 줄마다 구현하려면 div 태그안에 넣으면 됨
+
+	ex) <div><input placeholder="이메일" /></div>
+
+div*3>input -- 이렇게 입력하면 div3개를 만들고 거기에 input 박스를 넣는다
+
+     <a href="join.html"(다른 html 파일이름)> 회원가입 </a> == 이렇게 하면 회원가입을 눌렀을떄 join이라는 html이라는 파일로 이동한다.
+
+
+html은 각 테그를 수정 가능하다
+ 예를 들어 h1{
+ 				background-color: yellow; --배경색 
+        		color: blue;     -- 글자색
+        		font-size: 10pt; -- 글자크기
+        		font-style: italic;-- 글자모양
+
+ 			}
+
+ 		input {
+       			 color: blue;
+			     padding: 10px; -- 글자와 텍스트 박스 안의 간격
+          		 margin: 5px; -- 텍스트 박스 와 다른 테그와의 간격
+      		}
+
+
+위와 같이 전체적으로 바꿀수 있지만, 일부만 지정해 바꿀수 있다.
+   1. <input id="password" placeholder="비밀번호를 입력해 주세요" />
+   이렇게 id를 설정하는 것과   
+   2. <input class="password" placeholder="비밀번호를 입력해주세요"
+	이렇게 class를 설정하는 것이 있는데
+
+
+	id의 경우 #으로 생성하고
+	1-1 input#password {
+        color: brown; }    
+	
+	class의 경우 .으로 생성한다.
+
+	2-1 input.password {
+        color: brown;
+      }
+
+이렇게 id가 password인 것들은 따로 설정 가능하다
+이렇게 tag에 id를 설정한다면 #으로 위에서 설정 가능하다
+
+
+main.css
+		tytle 바로 밑에 
+		<link rel="stylesheet" href="(css이름)" />
+
+
+
+
+
+
