@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 활용하기</title>
+  </head>
+  <body>
+    <h1>CSS 활용하기</h1>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        border: 1px solid blue;
+        margin: 10px;
+      }
+
+      div#button {
+        /*top과 bottom 은 16px로 left 와 right는 12px로 설정*/
+        padding: 16px 12px;
+      }
+
+      button {
+        border: none;
+        padding: 12px 16px;
+        /*박스를 말각방형->타원형으로 교체*/
+        border-radius: 10px;
+      }
+
+      div#nav {
+        /*top 16 right 12 bottom 16 left 20*/
+        padding: 16px 12px 16px 20px;
+        background-color: blue;
+        color: white;
+      }
+
+      /*tag에 유일한 식별자인 id를 추가하고 id에 대해
+      select를 실행하고 속성 부여하기*/
+      /*id를 기준으로 select를 하였을 경우
+      tag 의 id를 변경하는 경우 지정한 속성이 무력화 될 수 있다.*/
+      button#save {
+        background-color: blue;
+        color: white;
+      }
+
+      /*tag 의 index를 사용하여 select하기 */
+      /* tag의 id class 속성에 관계없이 코딩된 순서 index를 select하여
+      속성 부여하기 
+      
+      이때는 id, class 를 변경하더라도 지정된 속성이 유지 될수 있다
+      하지만  index가 바뀌면 원하지 않는 속성이 지정되기도 한다.*/
+      div#button button:nth-of-type(1) {
+        background-color: green;
+        color: white;
+      }
+
+      /*모든 a tag에 공통 속성 적용하기
+      밑줄 제거, 컬러는 부모 tag의 컬러 상속 받기 */
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /*id가 nav인 div가 감싸고 있는 a tag */
+      /*a tag는 다양한 곳에서 많이 사용이 된다.  a tag에 대하여
+공통으로 속성을 지정하면 모든 a 파일이 함께 변경된다 여기는
+단순히 nav box에 포함된 a tag에만 적용하기 위한 조치*/
+      div#nav a {
+        display: inline-block;
+        padding: 12px 16px;
+        border: 1px solid green;
+      }
+      /*tag에 관계없이 모든 클래스에 적용
+      
+      현재 파일에 있는 모든 tag에 class가 bbs면 공통으로 
+      속성을 부여한다
+
+      tag지정 없이 class 를 select 할때는 매우 주의를 해라
+      */
+      .bbs {
+        background-color: red;
+        color: white;
+      }
+
+      /* bbs 클래스가 부착된 a tag에 속성 지정*/
+      a.bbs {
+        /*글자 눕히는거*/
+        font-style: italic;
+      }
+
+      /*css를 사용하여 interactive(활동적인) 효과주기
+      button tag에 마우스를 올렸을 때 hover 는 띄우다는 뜻이니
+      */
+      button:hover {
+        background-color: #777;
+        color: black;
+      }
+      div#button button:hover {
+        background-color: #777;
+        color: black;
+      }
+
+      div#nav a:hover {
+        /*x y 방향으로 2px만큼 벗어나게 3xp만큼 blure주기
+        색상은 검정색인데 투명도를 70% 만큼 줌*/
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+      }
+      div#menu {
+        background-color: green;
+        color: white;
+      }
+
+      div#menu a {
+        display: inline-block;
+        padding: 12px 16px 6px 16px;
+        margin: 10px 10px 14px;
+        /*transparen: 투명색*/
+        border: 2px solid transparent;
+        /*밑줄이 서서히 나타나게 하는 코드*/
+        transition-duration: 0.5s;
+      }
+      div#menu a:hover {
+        border-bottom: 2px solid yellow;
+      }
+
+      div#circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      }
+
+      div#button button:nth-of-type(4) {
+        background-image: url("image.jpg");
+        background-size: cover;
+      }
+    </style>
+
+    <div id="button">
+      <button id="view">내용보기</button>
+      <button id="save">저장하기</button>
+      <button id="list" class="bbs">리스트보기</button>
+      <button id="cancel">취소하기</button>
+    </div>
+
+    <div id="nav">
+      <a href="" class="home">Home</a>
+      <a href="" class="bbs">자유게시판</a>
+      <a href="" class="login">로그인</a>
+    </div>
+
+    <div id="menu">
+      <a href="">Home</a>
+      <a href="">자유게시판</a>
+      <a href="">로그인</a>
+    </div>
+    <div id="circle">안녕</div>
+  </body>
+</html>
