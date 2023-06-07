@@ -76,3 +76,4 @@ main.css
 block 성질의 tag : header, nav, div, p, section, article, footer
 inline-block 성질의 tag :  a, sapn, strong, b, lable, input, button
 
+html은 기본 높이가 0이다 이걸 높이를 고려해서 맞추려면 css에 html{height: 100%;} 로 한다.
