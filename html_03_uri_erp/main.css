@@ -1,0 +1,85 @@
+/*css 초기화*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*a태그 초기화*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: rgb(52, 152, 219);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(94, 94, 94);
+  color: white;
+  display: flex;
+}
+/*a tag에 padding을 적용시키려면 display:flex 로 하면 적용된다.*/
+nav a {
+  padding: 12px 16px 8px 16px;
+  margin: 7px 7px 5px 7px;
+  border-bottom: 2px solid transparent; /*2px만큼의 투명색 */
+  transition: 0.7s;
+}
+
+nav a:first-of-type {
+  margin-left: 10px;
+}
+
+nav a:nth-of-type(4) {
+  margin-left: auto;
+}
+
+nav a:nth-of-type(6) {
+  margin-left: auto;
+}
+/*hover가 되면 노란 밑줄을 그어라*/
+nav a:hover {
+  border-bottom: 1px solid yellow;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+  margin: 5px;
+  border: 1px solid gold;
+  height: 500px;
+}
+
+/*p의 p.dash-title클래스*/
+p.dash-title {
+  color: blue;
+  font-weight: bold;
+  transition: 0.7s;
+}
+/*바로 위에서 p.dash에 transition을 부여했으니
+hover가 */
+p.dash-title:hover {
+  background-color: #bbb;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+  padding: 0.7rem;
+}
+
+/*
+
+header
+nav
+footer
+
+*/

@@ -73,5 +73,6 @@ main.css
 :nth-of-type(4) 은 4번째 속성 값을 말하는 것
 
 
-
+block 성질의 tag : header, nav, div, p, section, article, footer
+inline-block 성질의 tag :  a, sapn, strong, b, lable, input, button
 
