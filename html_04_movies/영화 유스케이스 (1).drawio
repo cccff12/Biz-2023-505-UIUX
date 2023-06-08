@@ -1,0 +1,69 @@
+<mxfile host="app.diagrams.net" modified="2023-06-08T01:02:21.108Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="_QllZqnTjeMY4ZdGNQQX" version="21.3.7" type="device">
+  <diagram name="페이지-1" id="NCFBpHG9Lf10nmmbpuQ_">
+    <mxGraphModel dx="805" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-1" target="AZ3xCwnS5-hnuJ2-ivN7-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-1" target="AZ3xCwnS5-hnuJ2-ivN7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-1" target="AZ3xCwnS5-hnuJ2-ivN7-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="610" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-17" target="AZ3xCwnS5-hnuJ2-ivN7-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-17" target="AZ3xCwnS5-hnuJ2-ivN7-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-17" target="AZ3xCwnS5-hnuJ2-ivN7-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-17" value="빠른예매" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-18" target="AZ3xCwnS5-hnuJ2-ivN7-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-18" value="상영시간표" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="AZ3xCwnS5-hnuJ2-ivN7-19" target="AZ3xCwnS5-hnuJ2-ivN7-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-19" value="혜택" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-39" value="현재 영화 목록" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="710" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-40" value="극장선택" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="710" y="520" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-41" value="좌석선택" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="710" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-42" value="할인" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="720" y="930" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AZ3xCwnS5-hnuJ2-ivN7-43" value="상영중인 영화 &lt;br&gt;시간표" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="700" y="810" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
