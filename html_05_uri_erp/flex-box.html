@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex box</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      section {
+        display: flex;
+        /*flex item을 어떤 방향으로 배치할래*/
+        flex-direction: column;
+        flex-direction: row;
+        /*flex item을 nowrap으로 하면 화면을 줄여도 한 줄에 줄여지고
+              wrap을 하고 화면을 줄이면 item이 줄이 내려간다.
+              */
+        flex-wrap: nowrap; /*자동 줄바꿈*/
+        flex-wrap: wrap; /* 줄바꿈 안함*/
+
+        /*direction 가 wrap을 한번에 표현*/
+        flex-flow: row wrap;
+      }
+      div {
+        /*늘어나는 박스의 크기를 비율로 조정*/
+        flex-grow: 1; /*박스의 늘어나는 크기를 똑같이 맞춰라*/
+        flex-shrink: 1;
+        /*박스의 기본 크기 지정*/
+        flex-basis: 200px;
+        flex-basis: auto;
+        /*flex item box의 width를 1대1대1대... 의 비율로 자동 설정*/
+        /* 위의 3개를 한 번에 조정하는게 이것*/
+        flex: 0 1 auto;
+
+        border: 1px solid green;
+        padding: 1rem;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--section을 flex로 설정했으니 
+        그 children은 자동으로 flex-item 속성으로 변경됐다.-->
+    <section>
+      <div>flex item 1</div>
+      <div>flex item 2</div>
+      <div>flex item 3</div>
+      <div>flex item 4</div>
+      <div>flex item 5</div>
+      <div>flex item 1</div>
+      <div>flex item 2</div>
+      <div>flex item 3</div>
+      <div>flex item 4</div>
+      <div>flex item 5</div>
+    </section>
+  </body>
+</html>
