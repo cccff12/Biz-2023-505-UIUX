@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seclector</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      section {
+        width: 100%;
+        height: 100%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+
+      div {
+        width: 50%;
+        /* 부모값의 15%이다. 30%면 부모를 넘어버린다. */
+        height: 15%;
+        margin: 10px auto;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  -->
+    <section>
+      <div class="main" id="div1">div</div>
+      <div class="main" id="div2">div</div>
+      <div class="main" id="div3">div</div>
+      <div class="main" id="div4">div</div>
+      <div class="main" id="div5">div</div>
+    </section>
+  </body>
+  <!-- script 시작 이 안은 html의 공간이 아님 -->
+  <script>
+    // 이 문서에서 div1 이라는 selector를 가져와라
+    const div1 = document.querySelector("#div1");
+
+    div1.style.backgroundColor = "yellow";
+    // 함수를 만드는 키워드
+    // 함수 선언
+    // 함수에 작성된 코드는 즉시 실행되지 않는다.
+
+    const backgroundChange = function () {
+      const div2 = document.querySelector("#div2");
+      div2.style.backgroundColor = "green";
+    };
+    // 함수에 작성된 코드를 실행하라
+    // backgroundChange();
+
+    // div1 객체 변수의 addEventListener 함수를 입력하면서
+    // click 이라는 문자열과 backgroundChange 라는
+    //  함수형 변수를 매개변수로 전달하기
+    // div1을 click하면 backgroundChange 라는 함수 실행
+    div1.addEventListener("click", backgroundChange);
+  </script>
+</html>
