@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색하기</title>
+  </head>
+  <body>
+    <h1>나의 검색엔진</h1>
+    <form
+      id="naver"
+      action="https://search.naver.com/search.naver"
+      target="_new"
+    >
+      <label> 네이버 검색 </label>
+      <input name="query" placeholder="검색어를 입력해 주세요" />
+      <button type="button">검색하기</button>
+    </form>
+    <form id="daum" action="https://search.daum.net/search" target="_new">
+      <label> 다음 검색 </label>
+      <input name="q" placeholder="검색어를 입력해 주세요" />
+      <button type="button">검색하기</button>
+    </form>
+    <!--https://www.google.com/search?q=%EA%B5%AC%EA%B8%80%EC%A3%BC%EA%B0%80&ei=AFmBZKLdHszP-QbL2oD4BA&ved=0ahUKEwii3b-C67L_AhXMZ94KHUstAE8Q4dUDCA8&uact=5&oq=%EA%B5%AC%EA%B8%80%EC%A3%BC%EA%B0%80&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBwgAEB4Q8QQyBAgAEB4yBAgAEB4yCAgAEAUQHhAPOhEILhCABBCxAxCDARDHARDRAzoLCAAQgAQQsQMQgwE6HwguEIAEELEDEIMBEMcBENEDEJcFENwEEN4EEOAEGAE6DQguEIoFEMcBENEDEEM6BwgAEIoFEEM6GwguEIoFEMcBENEDEEMQlwUQ3AQQ3gQQ4AQYAToHCAAQgAQQCjoNCAAQgAQQsQMQgwEQCkoECEEYAFAAWMkKYPoLaAJwAXgBgAF2iAHgB5IBAzAuOZgBAKABAcABAdoBBggBEAEYFA&sclient=gws-wiz-serp-->
+    <form id="google" action="https://www.google.com/search" target="_new">
+      <label> 구글 검색 </label>
+      <input name="q" placeholder="검색어를 입력해 주세요" />
+      <button type="button">검색하기</button>
+    </form>
+  </body>
+
+  <script>
+    const naver = document.querySelector("form#naver");
+    const daum = document.querySelector("form#daum");
+    const google = document.querySelector("form#google");
+    // form이 감싸고 있는 button
+    const naver_button = naver.querySelector("button");
+    const daum_button = daum.querySelector("button");
+    const google_button = google.querySelector("button");
+    naver_button.addEventListener("click", () => {
+      const text = naver.querySelector("input").value;
+      if (!text) {
+        alert("검색어를 입력하세요");
+        naver.querySelector("input").focus();
+        return false;
+      }
+      // 서버로 데이터를 보내는 코드
+      naver.submit();
+    });
+
+    daum_button.addEventListener("click");
+    google_button.addEventListener("click");
+  </script>
+</html>

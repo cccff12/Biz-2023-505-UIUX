@@ -10,3 +10,8 @@
 - tag : tag의 이름 자체가 객체이름, Selector 이름이다.
 - classs : `.클래스명` 이 Selector 이름이다.
 - id : `#id명` 이 Selector 이름이다.
+
+# Dom(Document Object Model)
+- HTML 문서의 모든 객체를 일컫는 용어
+- `HTML 문서의 모든 요소는 객체`라는 선언
+- 

@@ -51,15 +51,21 @@
   <script>
     // 이 문서에서 div1 이라는 selector를 가져와라
     const div1 = document.querySelector("#div1");
-
     div1.style.backgroundColor = "yellow";
+
     // 함수를 만드는 키워드
     // 함수 선언
     // 함수에 작성된 코드는 즉시 실행되지 않는다.
 
     const backgroundChange = function () {
       const div2 = document.querySelector("#div2");
+      const div3 = document.querySelector("#div3");
+      const div4 = document.querySelector("#div4");
+      const div5 = document.querySelector("#div5");
       div2.style.backgroundColor = "green";
+      div3.style.backgroundColor = "red";
+      div4.style.backgroundColor = "blue";
+      div5.style.backgroundColor = "black";
     };
     // 함수에 작성된 코드를 실행하라
     // backgroundChange();
@@ -68,6 +74,39 @@
     // click 이라는 문자열과 backgroundChange 라는
     //  함수형 변수를 매개변수로 전달하기
     // div1을 click하면 backgroundChange 라는 함수 실행
+
+    /*
+      event handler 등록 코드
+      만약 누군가 div1(#div1) box 를 클릭하거든
+      backgroundChange 함수를 실행해 달라 라는 예약
+      div1 을 클릭하지 않으면 이 코드는 절대 실행되지 않는다
+      */
+
     div1.addEventListener("click", backgroundChange);
+    // ES5, ES6에서 새롭게 도입된 함수 선언문
+    // Arrow(화살표) 함수
+    // function 키워드를 제거하고 화살표 기호를 새로 도입했다.
+
+    // Private final List<Student> stList= new Arraylist
+    // 일반적인 정수 실수 문자열 등의 변수를 선언하는 키워드
+    let count = 0;
+    // const 객체, 함수(형 변수) 등을 선언하는 키워드
+    // java에서 final을 부착한 것과 같다.
+    const countup = () => {
+      div2.innerText = ++count; /*innertext는 div2안에 있는 문자*/
+    };
+    // countup 함수는 count 변수값을 1 증가 시키고 count
+    // 변수의 값을 div box 내부 text에 보여라
+    div2.addEventListener("click", countup);
+
+    // 현재 html 문에 있는 모든 div tag를 가져와서 divs라는 변수에
+    // 담아라 그리고 divs는 배열이다.
+    const divs = document.querySelectorAll("div");
+
+    divs[2].style.backgroundColor = "red";
+
+    for (let index = 0; index < divs.length; index++) {
+      divs[index].innerText = index + 1;
+    }
   </script>
 </html>
