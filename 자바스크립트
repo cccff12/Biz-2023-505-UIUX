@@ -27,3 +27,13 @@ get element는 예전 코드니 quary로 바꿔서 봐도 된다.
         return false;
 // 문자열형 숫자를 숫자로 바꾸는 코드 ,java의 integer.value       
          const 변수명 = Number(대상변수);
+
+        // 화면의 모든 요소들이 다 표현된 이후에 script를 시작하기 위한 코드
+         document.addEventListener("DOMContentLoaded", () => {
+        const div = document.querySelector("div");
+        div.style.backgroundColor = "yellow";
+      });
+
+html과 js를 연결할 때 
+head안에
+ <script src="js주소"></script>
