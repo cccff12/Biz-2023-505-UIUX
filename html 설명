@@ -77,3 +77,16 @@ block 성질의 tag : header, nav, div, p, section, article, footer
 inline-block 성질의 tag :  a, sapn, strong, b, lable, input, button
 
 html은 기본 높이가 0이다 이걸 높이를 고려해서 맞추려면 css에 html{height: 100%;} 로 한다.
+
+
+
+auto는 중앙정렬이다. 
+
+
+
+
+/*login box를 클릭했을때 input박스에 변화를 주는 것
+#login_form input:focus {
+  width: 280px;
+  border-color: #2ecc71;
+}
