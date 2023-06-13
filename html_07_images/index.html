@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        height: 100vh;
+        width: 100vw;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      div {
+        height: 30%;
+        overflow: hidden;
+        border-top: 1px solid black;
+      }
+
+      div:nth-of-type(1) {
+        overflow: visible;
+        overflow: hidden;
+      }
+      /* float 속성 
+      이미지와 text를 어울리도록 만들기 위한 속성으로 시작
+      div와 같은 box tag들을 가로 방향으로 배치할 때 여러가지
+      어려움이 있었다. 트릭으로 div box에 float 속성을 부여하여 가로로
+      배치하는 layout이 한때 유행했었다.
+      div box에 float 속성을 부여하면 여러가지 이슈가 발생하고
+      화면 layout 구현에 많은 어려움이 있었다.
+      이런 문제를 해결하기 위하여 display:flex, display:grid 속성이
+      만들어지고 지금은 div에 float 속성을 부여하는 방식을 사용하지
+      않는다.
+      */
+      img:nth-of-type(1) {
+        /* text를 기준으로 이미지와 
+        text를 어울리도록 만들기 위한 속성 */
+
+        float: right;
+        float: left;
+        margin: 10px;
+      }
+
+      div:nth-of-type(2) img {
+        /* offset-x, offset-y, blur, 색상 */
+        border-radius: 50%;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="./images/image1.jpg" height="40%" alt="처음이미지" />
+
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ea
+        unde blanditiis commodi mollitia possimus aliquam! Nam in vel officiis
+        mollitia, veniam beatae! Quisquam ratione illum, nihil tenetur
+        repellendus reprehenderit.Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Similique ea unde blanditiis commodi mollitia possimus
+        aliquam! Nam in vel officiis mollitia, veniam beatae! Quisquam ratione
+        illum, nihil tenetur repellendus reprehenderit.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ea
+        unde blanditiis commodi mollitia possimus aliquam! Nam in vel officiis
+        mollitia, veniam beatae! Quisquam ratione illum, nihil tenetur
+        repellendus reprehenderit.Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Similique ea unde blanditiis commodi mollitia possimus
+        aliquam! Nam in vel officiis mollitia, veniam beatae! Quisquam ratione
+        illum, nihil tenetur repellendus reprehenderit.
+      </p>
+    </div>
+
+    <div>
+      <img
+        src="/html_07_images/images/image2.jpg"
+        width="200px"
+        height="200px"
+        alt="나의 이미지"
+      />
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ea
+        unde blanditiis commodi mollitia possimus aliquam! Nam in vel officiis
+        mollitia, veniam beatae! Quisquam ratione illum, nihil tenetur
+        repellendus reprehenderit.Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Similique ea unde blanditiis commodi mollitia possimus
+        aliquam! Nam in vel officiis mollitia, veniam beatae! Quisquam ratione
+        illum, nihil tenetur repellendus reprehenderit.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ea
+        unde blanditiis commodi mollitia possimus aliquam! Nam in vel officiis
+        mollitia, veniam beatae! Quisquam ratione illum, nihil tenetur
+        repellendus reprehenderit.Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Similique ea unde blanditiis commodi mollitia possimus
+        aliquam! Nam in vel officiis mollitia, veniam beatae! Quisquam ratione
+        illum, nihil tenetur repellendus reprehenderit.
+      </p>
+    </div>
+
+    <div><img src="images/image3.jpg" width="50%" alt="환상이미지" /></div>
+  </body>
+</html>

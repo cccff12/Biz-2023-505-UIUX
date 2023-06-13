@@ -37,3 +37,43 @@ get element는 예전 코드니 quary로 바꿔서 봐도 된다.
 html과 js를 연결할 때 
 head안에
  <script src="js주소"></script>
+
+
+ // 함수 선언
+function func1() {
+  let num3 = 100;
+  let num4 = 200;
+  console.log(num3 + num4);
+}
+// 함수 호출
+func1();
+
+var는 다시 선언할 수 있다. 선언되고 또 선언되고..
+ let은 선언은 안되고 값만 바꿀수 있다. 그리고 한글이나 정수나 상관없다.
+  const는 값을 변경도 못한다.
+
+
+  함수에 변수 값을 변경하는 코드가 있다면 함수 실행 후 변수값도 
+ 함수 내부의 변경값으로 바뀐다- 근데 하면 안됨
+그러니 매개변수로 바꿔라 이렇게
+const nationFunc = (nation) => {
+  nation = "republic of korea";
+};
+nationFunc(nation2);
+
+노드js 터미널에서 실행
+ nodemon (파일 이름)
+ 종료 : control+c
+
+ // 표 형식으로 데이터 출력
+console.table(rndNum);
+
+  //   소수점 이하 자르기, 정수로 만들기
+  num = Math.floor(num);
+  // blank 배열에 요소 추가하기
+  rndNum.push(num);
+
+  // for의 확장문과 같음
+rndNum.forEach((item) => {
+  console.log(item);
+});

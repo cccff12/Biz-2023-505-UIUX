@@ -90,3 +90,34 @@ auto는 중앙정렬이다.
   width: 280px;
   border-color: #2ecc71;
 }
+
+버튼을 눌러서 다른 html에 연결하는 방법
+
+ document.querySelector("#join_button").addEventListener("click", () => {
+    // script 에서 a link 를 클릭한 것처럼 페이지 바꾸기
+    document.location.href = "join.html";
+  });
+
+
+text와 이미지를 붙이는 방법- 오른쪽이든 왼쪽이든 가능 대신 텍스트를 중심으로
+        img:nth-of-type(1) {
+        /* text를 기준으로 이미지와 
+        text를 어울리도록 만들기 위한 속성 */
+
+        float: right;
+        float: left;
+        margin: 10px;
+      }
+
+         div:nth-of-type(2) img: div의 두 번째에 있는 이미지
+
+
+rem: root사이즈 대비, 
+    2rem은 html에 설정된 font-size의 2배 만큼의 크기.
+    */
+  padding: 2rem;
+
+ 
+em : h1 tag의 font size의 2배 */
+  padding: 2em;
+

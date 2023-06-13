@@ -6,3 +6,8 @@
 - nodejs 가 탄생된 이후 javascript 는 폭발적으로 사용자가 증가하고 표준화가 급속하게 진행된다.
 - back-end, front-end 분야에서 가장 발전속도가 빠른 도구로 자리매김 하고 있다.
 - js코드를 브라우저를 사용하지 않고, console 환경에서 js코드를 실행하는 용도로 사용하겠다.
+
+## nodejs 설치 후 추가할 plugin
+
+- `nodemon`: `npm install -g nodemon` 명령으로 설치
+- nodemon 은 js 코드를 자동실행해야 하는 도구(이러한 도구를 Demon 이라고 한다.)

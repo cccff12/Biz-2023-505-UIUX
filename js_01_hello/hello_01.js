@@ -18,3 +18,4 @@ console.log(`우리나라는 ${nation}입니다`);
 // 변수를 사용하려면 그냥 사용하면 된다.
 let nation1 = "korea";
 console.log(nation1);
+//  노드원 종료 컨트롤+c
