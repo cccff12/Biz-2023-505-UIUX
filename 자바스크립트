@@ -77,3 +77,15 @@ console.table(rndNum);
 rndNum.forEach((item) => {
   console.log(item);
 });
+
+
+// nav에 ul tag가  null이냐? 만약 아니면 실행
+  nav_ul?.addEventListener("click", nav_click);
+
+클릭하면 다른 링크로 이동하게 하는 스크립트
+  const nav_click = (event) => {
+    const target = event.target;
+    const nav_text = target.innerText;
+    if (nav_text === "Home") {
+      document.location.href = "./index.html";
+    } 

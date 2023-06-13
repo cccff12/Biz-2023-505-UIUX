@@ -23,11 +23,12 @@ header {
     2rem은 html에 설정된 font-size의 2배 만큼의 크기.
     */
   padding: 2rem;
-  padding: 2em;
+  height: 50%;
   background-image: url(images/image1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   color: yellow;
   text-shadow: 2px 2px 2px black;
   text-align: center;
@@ -62,7 +63,7 @@ nav li:first-of-type {
 nav li:last-of-type {
   margin-left: 12px;
 }
-nav li:nth-last-of-type(4) {
+nav li:nth-last-of-type(3) {
   margin-right: auto;
 }
 select#main {
