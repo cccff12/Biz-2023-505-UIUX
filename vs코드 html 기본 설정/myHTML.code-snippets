@@ -1,0 +1,31 @@
+{
+  // vsCode Code snipets
+  // 자동 코드 완성
+  // 어떤 특별한 단축어(단어)를 사용하여
+  // 보일러코드(일상적으로 필요한 코드)를 자동으로 생성하는 것
+  //
+
+  // Example:
+  "MyHTML": {
+    "prefix": "!",
+    "body": [
+      "	<!DOCTYPE html>",
+      "	<html lang=\"ko\">",
+      "	<head>",
+      "		<meta charset=\"UTF-8\" />",
+      "		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />",
+      "		<title>나의 홈페이지</title>",
+      "		<style>",
+      "		* {",
+      "			box-sizing: border-box;",
+      "			margin: 0;",
+      "			padding: 0;",
+      "		}",
+      "		</style>",
+      "	</head>",
+      "	<body></body>",
+      "	</html>"
+    ],
+    "description": "나의 HTML 코드 완성"
+  }
+}
