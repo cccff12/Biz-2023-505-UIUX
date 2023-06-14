@@ -121,3 +121,7 @@ rem: root사이즈 대비,
 em : h1 tag의 font size의 2배 */
   padding: 2em;
 
+
+
+<!-- inline block 으로 글자를 쓸 때 사용 -->
+        <span class="badge"></span>
